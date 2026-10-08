@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Criar CV — CV Angola</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/criar-cv.css">
+</head>
+
+<body class="create-page">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="create-header">
+
+        <div class="create-header-inner">
+
+            <a class="logo" href="../index.html">
+                CV <span>Angola</span>
+            </a>
+
+            <div class="step-indicator" id="stepLbl">
+                Etapa 1 de 14
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROGRESSO ================= -->
+
+    <div class="progress">
+
+        <div class="progress-bar">
+            <i id="bar"></i>
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL CONTINUAR ================= -->
+
+    <div id="resume" class="modal" hidden>
+
+        <div class="resume-modal">
+
+            <div class="resume-icon">
+                ↻
+            </div>
+
+            <h2>Continuar o seu CV?</h2>
+
+            <p>
+                Encontrámos um currículo que começou anteriormente.
+                Deseja continuar de onde parou?
+            </p>
+
+            <div class="resume-actions">
+
+                <button class="btn btn-primary" id="cont">
+                    Continuar
+                </button>
+
+                <button class="btn btn-outline" id="fresh">
+                    Começar novo CV
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ÁREA PRINCIPAL ================= -->
+
+    <main class="app">
+
+        <!-- ================= FORMULÁRIO ================= -->
+
+        <section class="form-panel">
+
+            <div class="form-header">
+
+                <span class="form-eyebrow">
+                    CRIAÇÃO DO CURRICULUM VITAE
+                </span>
+
+                <p>
+                    Preencha os seus dados. O seu CV será atualizado
+                    automaticamente na pré-visualização.
+                </p>
+
+            </div>
+
+
+            <div id="stepBox"></div>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <div class="form-navigation">
+
+                <button class="btn btn-outline" id="prev">
+                    ← Anterior
+                </button>
+
+                <button class="btn btn-primary" id="next">
+                    Seguinte →
+                </button>
+
+            </div>
+
+
+            <div class="privacy-note">
+                <span>🔒</span>
+
+                <p>
+                    Os seus dados são processados localmente no seu
+                    navegador. Não é necessário criar uma conta.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREVIEW ================= -->
+
+        <section class="preview-panel" id="prevCol">
+
+            <div class="preview-header">
+
+                <div>
+                    <span class="preview-eyebrow">
+                        PRÉ-VISUALIZAÇÃO
+                    </span>
+
+                    <h2>O seu CV</h2>
+                </div>
+
+                <span class="live-status">
+                    <i></i>
+                    Em tempo real
+                </span>
+
+            </div>
+
+
+            <div class="pwrap" id="pwrap">
+
+                <div id="cv"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
