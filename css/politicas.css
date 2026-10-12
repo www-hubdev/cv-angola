@@ -1,0 +1,266 @@
+
+/* ==========================================
+   CV ANGOLA — POLÍTICA DE PRIVACIDADE
+   ========================================== */
+
+:root {
+    --azul-principal: #1E3A8A;
+    --azul-escuro: #092170;
+    --azul-claro: #DBEAFE;
+    --fundo: #F3F4F6;
+    --branco: #FFFFFF;
+    --texto: #374151;
+    --texto-secundario: #6B7280;
+    --borda: #E5E7EB;
+    --sombra: 0 10px 35px rgba(9, 33, 112, 0.07);
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Área principal */
+
+.politica-container {
+    width: min(100% - 40px, 1000px);
+    margin: 60px auto;
+}
+
+/* Cabeçalho */
+
+.politica-header {
+    background: linear-gradient(
+        135deg,
+        var(--azul-escuro),
+        var(--azul-principal)
+    );
+
+    color: var(--branco);
+    padding: 45px 40px;
+    border-radius: 16px 16px 0 0;
+}
+
+.politica-header .etiqueta {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--branco);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.politica-header h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--branco);
+}
+
+.politica-header p {
+    color: #DBEAFE;
+    font-size: 15px;
+    max-width: 650px;
+}
+
+/* Conteúdo */
+
+.politica-conteudo {
+    background-color: var(--branco);
+    padding: 45px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--sombra);
+}
+
+/* Títulos */
+
+.politica-conteudo h2 {
+    color: var(--azul-escuro);
+    font-size: 25px;
+    line-height: 1.4;
+    margin: 35px 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--azul-claro);
+}
+
+.politica-conteudo h2:first-child {
+    margin-top: 0;
+}
+
+.politica-conteudo h3 {
+    color: var(--azul-principal);
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 32px 0 14px;
+}
+
+/* Parágrafos */
+
+.politica-conteudo p {
+    color: var(--texto);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+/* Links */
+
+.politica-conteudo a {
+    color: var(--azul-principal);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.politica-conteudo a:hover {
+    color: var(--azul-escuro);
+    text-decoration: underline;
+}
+
+/* Listas */
+
+.politica-conteudo ul {
+    padding-left: 25px;
+    margin: 15px 0 25px;
+}
+
+.politica-conteudo li {
+    color: var(--texto);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.politica-conteudo li::marker {
+    color: var(--azul-principal);
+}
+
+/* Data de atualização */
+
+.politica-data {
+    margin-top: 35px;
+    padding: 16px 20px;
+    background-color: var(--azul-claro);
+    border-left: 4px solid var(--azul-principal);
+    border-radius: 8px;
+    color: var(--azul-escuro);
+    font-size: 13px;
+}
+
+.politica-data strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Rodapé */
+
+.politica-footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.politica-footer a {
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsividade: tablets */
+
+@media (max-width: 768px) {
+    .politica-container {
+        width: min(100% - 28px, 1000px);
+        margin: 35px auto;
+    }
+
+    .politica-header {
+        padding: 32px 25px;
+    }
+
+    .politica-conteudo {
+        padding: 30px 25px;
+    }
+
+    .politica-conteudo h2 {
+        font-size: 22px;
+    }
+
+    .politica-conteudo h3 {
+        font-size: 18px;
+    }
+}
+
+/* Responsividade: telemóveis */
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .politica-container {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+    }
+
+    .politica-header {
+        padding: 28px 20px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .politica-header h1 {
+        font-size: 27px;
+    }
+
+    .politica-header p {
+        font-size: 14px;
+    }
+
+    .politica-conteudo {
+        padding: 25px 20px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .politica-conteudo h2 {
+        font-size: 20px;
+        margin-top: 28px;
+    }
+
+    .politica-conteudo h3 {
+        font-size: 17px;
+    }
+
+    .politica-conteudo p,
+    .politica-conteudo li {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .politica-conteudo ul {
+        padding-left: 20px;
+    }
+}
